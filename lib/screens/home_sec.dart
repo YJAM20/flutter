@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:untitled1/screens/first_scren.dart';
+import 'package:untitled1/screens/grid_view_screen.dart';
+import 'package:untitled1/screens/imege.dart';
+import 'package:untitled1/screens/list_view_builder_screen.dart';
+import 'package:untitled1/screens/list_view_screen.dart';
+import 'package:untitled1/screens/list_view_sip.dart';
 import 'package:untitled1/screens/login_screen.dart';
 import 'package:untitled1/screens/signup_screen.dart';
 
@@ -14,10 +19,13 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
   List<Widget> _pages = [
     FirstScren(),
-    Text("add"),
+    ListViewScreen(),
     LoginScreen(),
     SignupScreen(),
-    Text("settings"),
+    GridViewScreen(),
+    ListViewBuilderScreen(),
+    ListViewSip(),
+    Imege(),
   ];
 
   @override
@@ -39,8 +47,8 @@ class _HomeScreenState extends State<HomeScreen> {
             backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add_box),
-            label: "add",
+            icon: Icon(Icons.list),
+            label: "list",
             backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
@@ -54,11 +62,25 @@ class _HomeScreenState extends State<HomeScreen> {
             backgroundColor: Colors.grey,
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: "settings",
+            icon: Icon(Icons.grid_on),
+            label: "GridView",
             backgroundColor: Colors.grey,
           ),
-
+          BottomNavigationBarItem(
+            icon: Icon(Icons.list),
+            label: "list",
+            backgroundColor: Colors.red,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.list),
+            label: "list",
+            backgroundColor: Colors.red,
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.image),
+            label: "image",
+            backgroundColor: Colors.red,
+          ),
         ],
       ),
     );
