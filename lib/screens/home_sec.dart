@@ -9,7 +9,7 @@ import 'package:untitled1/screens/login_screen.dart';
 import 'package:untitled1/screens/signup_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({super.key, required String title});
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();

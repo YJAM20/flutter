@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class Imege extends StatelessWidget {
   const Imege({super.key});
@@ -6,9 +7,9 @@ class Imege extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Image.asset(
-          "assets/images/pexels-francesco-ungaro-1525041.jpg"
-      ),
+      body:Center(
+        child: SvgPicture.asset("assets/svg/Shape.svg", width: 100, height: 100),
+      ) ,
     );
   }
 }
